@@ -1,16 +1,49 @@
 {
   "name": "@sse-ui/themer",
   "version": "1.0.0",
-  "description": "SSE UI Styles",
+  "description": "SSE UI styles",
   "license": "MIT",
   "author": "SSE World",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "source": "./src/index.ts",
+  "module": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc ./src/index.ts --outDir dist --declaration --esModuleInterop",
+    "prepublishOnly": "npm run build",
+    "publish": "npm run build && npm publish --access public --provenance"
   },
   "dependencies": {
+    "tailwind-merge": "^3.3.1",
     "tailwind-variants": "^3.1.1",
     "tailwindcss": "^4.1.14"
-  }
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sse-ui/core.git",
+    "directory": "packages/theme"
+  },
+  "bugs": {
+    "url": "https://github.com/sse-ui/core/issues"
+  },
+  "homepage": "https://github.com/sse-ui/core#readme"
 }
