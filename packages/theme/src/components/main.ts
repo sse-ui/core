@@ -5,3 +5,4 @@ export const main = tv({
 });
 
 export type MainProps = VariantProps<typeof main>;
+export type MainSlots = ReturnType<typeof main>;

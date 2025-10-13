@@ -5,3 +5,4 @@ export const pageBody = tv({
 });
 
 export type PageBodyProps = VariantProps<typeof pageBody>;
+export type PageBodySlots = ReturnType<typeof pageBody>;

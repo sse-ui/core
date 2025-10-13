@@ -302,3 +302,4 @@ export const inputTags = tv({
 });
 
 export type InputTagsProps = VariantProps<typeof inputTags>;
+export type InputTagsSlots = ReturnType<typeof inputTags>;

@@ -164,3 +164,4 @@ export const slider = tv({
 });
 
 export type SliderProps = VariantProps<typeof slider>;
+export type SliderSlots = ReturnType<typeof slider>;

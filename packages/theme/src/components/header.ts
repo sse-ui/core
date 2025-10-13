@@ -28,3 +28,4 @@ export const header = tv({
 });
 
 export type HeaderProps = VariantProps<typeof header>;
+export type HeaderSlots = ReturnType<typeof header>;

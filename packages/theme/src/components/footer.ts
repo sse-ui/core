@@ -15,3 +15,4 @@ export const footer = tv({
 });
 
 export type FooterProps = VariantProps<typeof footer>;
+export type FooterSlots = ReturnType<typeof footer>;

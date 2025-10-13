@@ -15,3 +15,4 @@ export const dashboardSearch = tv({
 });
 
 export type DashboardSearchProps = VariantProps<typeof dashboardSearch>;
+export type DashboardSearchSlots = ReturnType<typeof dashboardSearch>;

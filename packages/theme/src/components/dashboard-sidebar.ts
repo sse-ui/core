@@ -39,3 +39,4 @@ export const dashboardSidebar = tv({
 });
 
 export type DashboardSidebarProps = VariantProps<typeof dashboardSidebar>;
+export type DashboardSidebarSlots = ReturnType<typeof dashboardSidebar>;

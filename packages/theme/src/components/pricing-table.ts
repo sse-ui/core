@@ -54,3 +54,4 @@ export const pricingTable = tv({
 });
 
 export type PricingTableProps = VariantProps<typeof pricingTable>;
+export type PricingTableSlots = ReturnType<typeof pricingTable>;

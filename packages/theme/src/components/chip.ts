@@ -99,3 +99,4 @@ export const chip = tv({
 });
 
 export type ChipProps = VariantProps<typeof chip>;
+export type ChipSlots = ReturnType<typeof chip>;

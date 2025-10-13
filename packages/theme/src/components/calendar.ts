@@ -113,3 +113,4 @@ export const calendar = tv({
 });
 
 export type CalendarProps = VariantProps<typeof calendar>;
+export type CalendarSlots = ReturnType<typeof calendar>;

@@ -98,3 +98,4 @@ export const user = tv({
 });
 
 export type UserProps = VariantProps<typeof user>;
+export type UserSlots = ReturnType<typeof user>;

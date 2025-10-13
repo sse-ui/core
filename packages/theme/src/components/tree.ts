@@ -151,3 +151,4 @@ export const tree = tv({
 });
 
 export type TreeProps = VariantProps<typeof tree>;
+export type TreeSlots = ReturnType<typeof tree>;

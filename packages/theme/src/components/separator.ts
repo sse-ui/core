@@ -159,3 +159,4 @@ export const separator = tv({
 });
 
 export type SeparatorProps = VariantProps<typeof separator>;
+export type SeparatorSlots = ReturnType<typeof separator>;

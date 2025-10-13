@@ -292,3 +292,4 @@ export const textarea = tv({
 });
 
 export type TextareaProps = VariantProps<typeof textarea>;
+export type TextareaSlots = ReturnType<typeof textarea>;

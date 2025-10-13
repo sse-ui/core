@@ -502,3 +502,4 @@ export const navigationMenu = tv({
 });
 
 export type NavigationMenuProps = VariantProps<typeof navigationMenu>;
+export type NavigationMenuSlots = ReturnType<typeof navigationMenu>;

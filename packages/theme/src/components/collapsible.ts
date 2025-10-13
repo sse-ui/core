@@ -9,3 +9,4 @@ export const collapsible = tv({
 });
 
 export type CollapsibleProps = VariantProps<typeof collapsible>;
+export type CollapsibleSlots = ReturnType<typeof collapsible>;

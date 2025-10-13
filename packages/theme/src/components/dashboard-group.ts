@@ -5,3 +5,4 @@ export const dashboardGroup = tv({
 });
 
 export type DashboardGroupProps = VariantProps<typeof dashboardGroup>;
+export type DashboardGroupSlots = ReturnType<typeof dashboardGroup>;

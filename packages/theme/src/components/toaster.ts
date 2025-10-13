@@ -91,3 +91,4 @@ export const toaster = tv({
 });
 
 export type ToasterProps = VariantProps<typeof toaster>;
+export type ToasterSlots = ReturnType<typeof toaster>;

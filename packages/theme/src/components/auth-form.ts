@@ -22,3 +22,4 @@ export const authForm = tv({
 });
 
 export type AuthFormProps = VariantProps<typeof authForm>;
+export type AuthFormSlots = ReturnType<typeof authForm>;

@@ -232,3 +232,4 @@ export const checkbox = tv({
 });
 
 export type CheckboxProps = VariantProps<typeof checkbox>;
+export type CheckboxSlots = ReturnType<typeof checkbox>;

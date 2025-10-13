@@ -67,3 +67,4 @@ export const marquee = tv({
 });
 
 export type MarqueeProps = VariantProps<typeof marquee>;
+export type MarqueeSlots = ReturnType<typeof marquee>;

@@ -76,3 +76,4 @@ export const toast = tv({
 });
 
 export type ToastProps = VariantProps<typeof toast>;
+export type ToastSlots = ReturnType<typeof toast>;

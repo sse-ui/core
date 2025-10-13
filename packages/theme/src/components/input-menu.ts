@@ -449,3 +449,4 @@ export const inputMenu = tv({
 });
 
 export type InputMenuProps = VariantProps<typeof inputMenu>;
+export type InputMenuSlots = ReturnType<typeof inputMenu>;

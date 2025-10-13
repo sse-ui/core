@@ -10,3 +10,7 @@ export const dashboardSearchButton = tv({
 export type DashboardSearchButtonProps = VariantProps<
   typeof dashboardSearchButton
 >;
+
+export type DashboardSearchButtonSlots = ReturnType<
+  typeof dashboardSearchButton
+>;

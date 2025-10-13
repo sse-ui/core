@@ -28,3 +28,4 @@ export const pageFeature = tv({
 });
 
 export type PageFeatureProps = VariantProps<typeof pageFeature>;
+export type PageFeatureSlots = ReturnType<typeof pageFeature>;

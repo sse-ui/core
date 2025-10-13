@@ -15,3 +15,4 @@ export const pagination = tv({
 });
 
 export type PaginationProps = VariantProps<typeof pagination>;
+export type PaginationSlots = ReturnType<typeof pagination>;

@@ -10,3 +10,4 @@ export const pageList = tv({
 });
 
 export type PageListProps = VariantProps<typeof pageList>;
+export type PageListSlots = ReturnType<typeof pageList>;

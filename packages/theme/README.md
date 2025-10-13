@@ -33,7 +33,7 @@ import type { Config } from 'tailwindcss'
 module.exports =  {
   content: [
     // your other paths
-    "./node_modules/@sse ui/themer/dist/**/*.{js,ts}",
+    "./node_modules/@sse-ui/themer/dist/**/*.{js,ts,tsx,jsx}",
   ],
   theme: {
     extend: {

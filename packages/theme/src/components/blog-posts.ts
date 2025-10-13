@@ -11,3 +11,4 @@ export const blogPosts = tv({
 });
 
 export type BlogPostsProps = VariantProps<typeof blogPosts>;
+export type BlogPostsSlots = ReturnType<typeof blogPosts>;

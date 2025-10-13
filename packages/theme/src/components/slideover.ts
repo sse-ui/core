@@ -74,3 +74,4 @@ export const slideover = tv({
 });
 
 export type SlideoverProps = VariantProps<typeof slideover>;
+export type SlideoverSlots = ReturnType<typeof slideover>;

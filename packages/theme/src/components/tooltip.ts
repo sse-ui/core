@@ -12,3 +12,4 @@ export const tooltip = tv({
 });
 
 export type TooltipProps = VariantProps<typeof tooltip>;
+export type TooltipSlots = ReturnType<typeof tooltip>;

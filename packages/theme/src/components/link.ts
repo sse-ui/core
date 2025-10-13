@@ -21,3 +21,4 @@ export const link = tv({
 });
 
 export type LinkProps = VariantProps<typeof link>;
+export type LinkSlots = ReturnType<typeof link>;

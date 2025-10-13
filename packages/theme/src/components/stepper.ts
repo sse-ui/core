@@ -203,3 +203,4 @@ export const stepper = tv({
 });
 
 export type StepperProps = VariantProps<typeof stepper>;
+export type StepperSlots = ReturnType<typeof stepper>;

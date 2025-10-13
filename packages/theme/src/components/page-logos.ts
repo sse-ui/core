@@ -18,3 +18,4 @@ export const pageLogos = tv({
 });
 
 export type PageLogosProps = VariantProps<typeof pageLogos>;
+export type PageLogosSlots = ReturnType<typeof pageLogos>;

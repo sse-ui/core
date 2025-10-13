@@ -238,3 +238,4 @@ export const inputNumber = tv({
 });
 
 export type InputNumberProps = VariantProps<typeof inputNumber>;
+export type InputNumberSlots = ReturnType<typeof inputNumber>;

@@ -5,3 +5,4 @@ export const pageGrid = tv({
 });
 
 export type PageGridProps = VariantProps<typeof pageGrid>;
+export type PageGridSlots = ReturnType<typeof pageGrid>;

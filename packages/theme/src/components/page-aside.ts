@@ -12,3 +12,4 @@ export const pageAside = tv({
 });
 
 export type PageAsideProps = VariantProps<typeof pageAside>;
+export type PageAsideSlots = ReturnType<typeof pageAside>;

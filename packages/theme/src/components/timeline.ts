@@ -335,3 +335,4 @@ export const timeline = tv({
 });
 
 export type TimelineProps = VariantProps<typeof timeline>;
+export type TimelineSlots = ReturnType<typeof timeline>;

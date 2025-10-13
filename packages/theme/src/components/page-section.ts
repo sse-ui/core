@@ -84,3 +84,4 @@ export const pageSection = tv({
 });
 
 export type PageSectionProps = VariantProps<typeof pageSection>;
+export type PageSectionSlots = ReturnType<typeof pageSection>;

@@ -262,3 +262,4 @@ export const tabs = tv({
 });
 
 export type TabsProps = VariantProps<typeof tabs>;
+export type TabsSlots = ReturnType<typeof tabs>;

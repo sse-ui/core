@@ -262,3 +262,4 @@ export const alert = tv({
 });
 
 export type AlertProps = VariantProps<typeof alert>;
+export type AlertSlots = ReturnType<typeof alert>;

@@ -5,3 +5,4 @@ export const pageColumns = tv({
 });
 
 export type PageColumnsProps = VariantProps<typeof pageColumns>;
+export type PageColumnsSlots = ReturnType<typeof pageColumns>;

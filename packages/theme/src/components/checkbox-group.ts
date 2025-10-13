@@ -199,3 +199,4 @@ export const checkboxGroup = tv({
 });
 
 export type CheckboxGroupProps = VariantProps<typeof checkboxGroup>;
+export type CheckboxGroupSlots = ReturnType<typeof checkboxGroup>;

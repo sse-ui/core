@@ -7,3 +7,7 @@ export const dashboardResizeHandle = tv({
 export type DashboardResizeHandleProps = VariantProps<
   typeof dashboardResizeHandle
 >;
+
+export type DashboardResizeHandleSlots = ReturnType<
+  typeof dashboardResizeHandle
+>;

@@ -5,3 +5,4 @@ export const skeleton = tv({
 });
 
 export type SkeletonProps = VariantProps<typeof skeleton>;
+export type SkeletonSlots = ReturnType<typeof skeleton>;

@@ -18,3 +18,4 @@ export const fieldGroup = tv({
 });
 
 export type FieldGroupProps = VariantProps<typeof fieldGroup>;
+export type FieldGroupSlots = ReturnType<typeof fieldGroup>;

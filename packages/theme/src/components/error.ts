@@ -12,3 +12,4 @@ export const error = tv({
 });
 
 export type ErrorProps = VariantProps<typeof error>;
+export type ErrorSlots = ReturnType<typeof error>;

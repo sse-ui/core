@@ -57,3 +57,4 @@ export const avatar = tv({
 });
 
 export type AvatarProps = VariantProps<typeof avatar>;
+export type AvatarSlots = ReturnType<typeof avatar>;

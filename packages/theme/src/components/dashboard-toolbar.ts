@@ -9,3 +9,4 @@ export const dashboardToolbar = tv({
 });
 
 export type DashboardToolbarProps = VariantProps<typeof dashboardToolbar>;
+export type DashboardToolbarSlots = ReturnType<typeof dashboardToolbar>;

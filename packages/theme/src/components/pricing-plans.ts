@@ -24,3 +24,4 @@ export const pricingPlans = tv({
 });
 
 export type PricingPlansProps = VariantProps<typeof pricingPlans>;
+export type PricingPlansSlots = ReturnType<typeof pricingPlans>;

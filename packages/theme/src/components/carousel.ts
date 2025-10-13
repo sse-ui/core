@@ -37,3 +37,4 @@ export const carousel = tv({
 });
 
 export type CarouselProps = VariantProps<typeof carousel>;
+export type CarouselSlots = ReturnType<typeof carousel>;

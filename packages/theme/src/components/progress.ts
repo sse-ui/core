@@ -284,3 +284,4 @@ export const progress = tv({
 });
 
 export type ProgressProps = VariantProps<typeof progress>;
+export type ProgressSlots = ReturnType<typeof progress>;

@@ -19,3 +19,4 @@ export const dashboardPanel = tv({
 });
 
 export type DashboardPanelProps = VariantProps<typeof dashboardPanel>;
+export type DashboardPanelSlots = ReturnType<typeof dashboardPanel>;

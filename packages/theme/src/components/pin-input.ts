@@ -168,3 +168,4 @@ export const pinInput = tv({
 });
 
 export type PinInputProps = VariantProps<typeof pinInput>;
+export type PinInputSlots = ReturnType<typeof pinInput>;

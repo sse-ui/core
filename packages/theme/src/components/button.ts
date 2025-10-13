@@ -425,3 +425,4 @@ export const button = tv({
 });
 
 export type ButtonProps = VariantProps<typeof button>;
+export type ButtonSlots = ReturnType<typeof button>;

@@ -161,3 +161,4 @@ export const table = tv({
 });
 
 export type TableProps = VariantProps<typeof table>;
+export type TableSlots = ReturnType<typeof table>;

@@ -48,3 +48,4 @@ export const pageHero = tv({
 });
 
 export type PageHeroProps = VariantProps<typeof pageHero>;
+export type PageHeroSlots = ReturnType<typeof pageHero>;

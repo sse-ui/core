@@ -23,3 +23,4 @@ export const dashboardNavbar = tv({
 });
 
 export type DashboardNavbarProps = VariantProps<typeof dashboardNavbar>;
+export type DashboardNavbarSlots = ReturnType<typeof dashboardNavbar>;

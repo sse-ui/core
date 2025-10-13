@@ -187,3 +187,4 @@ export const kbd = tv({
 });
 
 export type KbdProps = VariantProps<typeof kbd>;
+export type KbdSlots = ReturnType<typeof kbd>;

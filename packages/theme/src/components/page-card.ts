@@ -281,3 +281,4 @@ export const pageCard = tv({
 });
 
 export type PageCardProps = VariantProps<typeof pageCard>;
+export type PageCardSlots = ReturnType<typeof pageCard>;

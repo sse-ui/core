@@ -13,3 +13,6 @@ export const dashboardSidebarCollapse = tv({
 export type DashboardSidebarCollapseProps = VariantProps<
   typeof dashboardSidebarCollapse
 >;
+export type DashboardSidebarCollapseSlots = ReturnType<
+  typeof dashboardSidebarCollapse
+>;

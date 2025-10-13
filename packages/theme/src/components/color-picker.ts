@@ -52,3 +52,4 @@ export const colorPicker = tv({
 });
 
 export type ColorPickerProps = VariantProps<typeof colorPicker>;
+export type ColorPickerSlots = ReturnType<typeof colorPicker>;

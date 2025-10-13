@@ -5,3 +5,4 @@ export const container = tv({
 });
 
 export type ContainerProps = VariantProps<typeof container>;
+export type ContainerSlots = ReturnType<typeof container>;

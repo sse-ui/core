@@ -34,3 +34,4 @@ export const page = tv({
 });
 
 export type PageProps = VariantProps<typeof page>;
+export type PageSlots = ReturnType<typeof page>;

@@ -351,3 +351,4 @@ export const selectMenu = tv({
 });
 
 export type SelectMenuProps = VariantProps<typeof selectMenu>;
+export type SelectMenuSlots = ReturnType<typeof selectMenu>;

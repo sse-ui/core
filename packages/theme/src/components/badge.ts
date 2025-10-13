@@ -263,3 +263,4 @@ export const badge = tv({
 });
 
 export type BadgeProps = VariantProps<typeof badge>;
+export type BadgeSlots = ReturnType<typeof badge>;

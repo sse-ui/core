@@ -24,3 +24,4 @@ export const pageLinks = tv({
 });
 
 export type PageLinksProps = VariantProps<typeof pageLinks>;
+export type PageLinksSlots = ReturnType<typeof pageLinks>;

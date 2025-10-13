@@ -46,3 +46,4 @@ export const changelogVersion = tv({
 });
 
 export type ChangelogVersionProps = VariantProps<typeof changelogVersion>;
+export type ChangelogVersionSlots = ReturnType<typeof changelogVersion>;

@@ -13,3 +13,6 @@ export const dashboardSidebarToggle = tv({
 export type DashboardSidebarToggleProps = VariantProps<
   typeof dashboardSidebarToggle
 >;
+export type DashboardSidebarToggleSlots = ReturnType<
+  typeof dashboardSidebarToggle
+>;

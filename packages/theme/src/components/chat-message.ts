@@ -123,3 +123,4 @@ export const chatMessage = tv({
 });
 
 export type ChatMessageProps = VariantProps<typeof chatMessage>;
+export type ChatMessageSlots = ReturnType<typeof chatMessage>;

@@ -44,3 +44,4 @@ export const breadcrumb = tv({
 });
 
 export type BreadcrumbProps = VariantProps<typeof breadcrumb>;
+export type BreadcrumbSlots = ReturnType<typeof breadcrumb>;

@@ -55,3 +55,4 @@ export const avatarGroup = tv({
 });
 
 export type AvatarGroupProps = VariantProps<typeof avatarGroup>;
+export type AvatarGroupSlots = ReturnType<typeof avatarGroup>;

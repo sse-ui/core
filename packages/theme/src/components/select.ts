@@ -340,3 +340,4 @@ export const select = tv({
 });
 
 export type SelectProps = VariantProps<typeof select>;
+export type SelectSlots = ReturnType<typeof select>;

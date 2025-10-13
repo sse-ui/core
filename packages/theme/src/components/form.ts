@@ -5,3 +5,4 @@ export const form = tv({
 });
 
 export type FormProps = VariantProps<typeof form>;
+export type FormSlots = ReturnType<typeof form>;

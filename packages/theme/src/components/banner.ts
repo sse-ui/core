@@ -109,3 +109,4 @@ export const banner = tv({
 });
 
 export type BannerProps = VariantProps<typeof banner>;
+export type BannerSlots = ReturnType<typeof banner>;

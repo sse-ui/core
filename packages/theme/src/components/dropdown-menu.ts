@@ -229,3 +229,4 @@ export const dropdownMenu = tv({
 });
 
 export type DropdownMenuProps = VariantProps<typeof dropdownMenu>;
+export type DropdownMenuSlots = ReturnType<typeof dropdownMenu>;

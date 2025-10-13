@@ -31,3 +31,4 @@ export const card = tv({
 });
 
 export type CardProps = VariantProps<typeof card>;
+export type CardSlots = ReturnType<typeof card>;

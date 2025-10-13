@@ -57,3 +57,4 @@ export const commandPalette = tv({
 });
 
 export type CommandPaletteProps = VariantProps<typeof commandPalette>;
+export type CommandPaletteSlots = ReturnType<typeof commandPalette>;

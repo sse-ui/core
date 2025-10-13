@@ -35,3 +35,4 @@ export const modal = tv({
 });
 
 export type ModalProps = VariantProps<typeof modal>;
+export type ModalSlots = ReturnType<typeof modal>;

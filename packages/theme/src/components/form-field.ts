@@ -51,3 +51,4 @@ export const formField = tv({
 });
 
 export type FormFieldProps = VariantProps<typeof formField>;
+export type FormFieldSlots = ReturnType<typeof formField>;

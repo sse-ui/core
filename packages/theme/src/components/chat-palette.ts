@@ -10,3 +10,4 @@ export const chatPalette = tv({
 });
 
 export type ChatPaletteProps = VariantProps<typeof chatPalette>;
+export type ChatPaletteSlots = ReturnType<typeof chatPalette>;

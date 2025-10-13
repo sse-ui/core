@@ -22,3 +22,4 @@ export const pageHeader = tv({
 });
 
 export type PageHeaderProps = VariantProps<typeof pageHeader>;
+export type PageHeaderSlots = ReturnType<typeof pageHeader>;

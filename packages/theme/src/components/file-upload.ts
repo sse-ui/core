@@ -288,3 +288,4 @@ export const fileUpload = tv({
 });
 
 export type FileUploadProps = VariantProps<typeof fileUpload>;
+export type FileUploadSlots = ReturnType<typeof fileUpload>;

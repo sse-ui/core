@@ -228,3 +228,4 @@ export const contextMenu = tv({
 });
 
 export type ContextMenuProps = VariantProps<typeof contextMenu>;
+export type ContextMenuSlots = ReturnType<typeof contextMenu>;

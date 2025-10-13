@@ -28,3 +28,4 @@ export const footerColumns = tv({
 });
 
 export type FooterColumnsProps = VariantProps<typeof footerColumns>;
+export type FooterColumnsSlots = ReturnType<typeof footerColumns>;

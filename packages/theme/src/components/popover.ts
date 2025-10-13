@@ -9,3 +9,4 @@ export const popover = tv({
 });
 
 export type PopoverProps = VariantProps<typeof popover>;
+export type PopoverSlots = ReturnType<typeof popover>;

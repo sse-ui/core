@@ -333,3 +333,4 @@ export const radioGroup = tv({
 });
 
 export type RadioGroupProps = VariantProps<typeof radioGroup>;
+export type RadioGroupSlots = ReturnType<typeof radioGroup>;

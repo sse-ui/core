@@ -286,3 +286,4 @@ export const input = tv({
 });
 
 export type InputProps = VariantProps<typeof input>;
+export type InputSlots = ReturnType<typeof input>;

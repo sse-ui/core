@@ -25,3 +25,4 @@ export const accordion = tv({
 });
 
 export type AccordionProps = VariantProps<typeof accordion>;
+export type AccordionSlots = ReturnType<typeof accordion>

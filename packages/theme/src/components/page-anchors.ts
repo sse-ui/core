@@ -32,3 +32,4 @@ export const pageAnchors = tv({
 });
 
 export type PageAnchorsProps = VariantProps<typeof pageAnchors>;
+export type PageAnchorsSlots = ReturnType<typeof pageAnchors>;

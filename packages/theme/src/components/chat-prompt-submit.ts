@@ -7,3 +7,4 @@ export const chatPromptSubmit = tv({
 });
 
 export type ChatPromptSubmitProps = VariantProps<typeof chatPromptSubmit>;
+export type ChatPromptSubmitSlots = ReturnType<typeof chatPromptSubmit>;

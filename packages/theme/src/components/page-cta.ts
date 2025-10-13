@@ -68,3 +68,4 @@ export const pageCTA = tv({
 });
 
 export type PageCTAProps = VariantProps<typeof pageCTA>;
+export type PageCTASlots = ReturnType<typeof pageCTA>;

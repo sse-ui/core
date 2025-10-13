@@ -145,3 +145,4 @@ export const drawer = tv({
 });
 
 export type DrawerProps = VariantProps<typeof drawer>;
+export type DrawerSlots = ReturnType<typeof drawer>;
