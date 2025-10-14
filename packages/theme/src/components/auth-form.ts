@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const authForm = tv({
   slots: {
@@ -22,4 +23,4 @@ export const authForm = tv({
 });
 
 export type AuthFormProps = VariantProps<typeof authForm>;
-export type AuthFormSlots = ReturnType<typeof authForm>;
+export type AuthFormSlots = ComponentSlots<typeof authForm>;

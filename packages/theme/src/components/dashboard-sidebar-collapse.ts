@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const dashboardSidebarCollapse = tv({
   base: "hidden lg:flex",
@@ -13,6 +14,6 @@ export const dashboardSidebarCollapse = tv({
 export type DashboardSidebarCollapseProps = VariantProps<
   typeof dashboardSidebarCollapse
 >;
-export type DashboardSidebarCollapseSlots = ReturnType<
+export type DashboardSidebarCollapseSlots = ComponentSlots<
   typeof dashboardSidebarCollapse
 >;

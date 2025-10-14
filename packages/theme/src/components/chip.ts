@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Color, Position, Size } from "../types";
+import type { Color, Position, Size } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const color: Color[] = [
   "primary",
@@ -99,4 +100,4 @@ export const chip = tv({
 });
 
 export type ChipProps = VariantProps<typeof chip>;
-export type ChipSlots = ReturnType<typeof chip>;
+export type ChipSlots = ComponentSlots<typeof chip>;

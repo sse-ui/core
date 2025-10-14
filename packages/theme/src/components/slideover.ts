@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const side = ["top", "right", "bottom", "left"] as const;
 
@@ -74,4 +75,4 @@ export const slideover = tv({
 });
 
 export type SlideoverProps = VariantProps<typeof slideover>;
-export type SlideoverSlots = ReturnType<typeof slideover>;
+export type SlideoverSlots = ComponentSlots<typeof slideover>;

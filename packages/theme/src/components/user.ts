@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const size = [
   "3xs",
@@ -98,4 +99,4 @@ export const user = tv({
 });
 
 export type UserProps = VariantProps<typeof user>;
-export type UserSlots = ReturnType<typeof user>;
+export type UserSlots = ComponentSlots<typeof user>;

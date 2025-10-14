@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Size } from "../types";
+import type { Size } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const size: Exclude<Size, "3xs" | "2xs" | "2xl" | "3xl">[] = [
   "xs",
@@ -51,4 +52,4 @@ export const formField = tv({
 });
 
 export type FormFieldProps = VariantProps<typeof formField>;
-export type FormFieldSlots = ReturnType<typeof formField>;
+export type FormFieldSlots = ComponentSlots<typeof formField>;

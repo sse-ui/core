@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const orientation = ["horizontal", "vertical"] as const;
 const size = ["xs", "sm", "md", "lg", "xl"] as const;
@@ -203,4 +204,4 @@ export const stepper = tv({
 });
 
 export type StepperProps = VariantProps<typeof stepper>;
-export type StepperSlots = ReturnType<typeof stepper>;
+export type StepperSlots = ComponentSlots<typeof stepper>;

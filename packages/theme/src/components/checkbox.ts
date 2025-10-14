@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Color, Indicator, Size } from "../types";
+import type { Color, Indicator, Size } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const color: Color[] = [
   "primary",
@@ -232,4 +233,4 @@ export const checkbox = tv({
 });
 
 export type CheckboxProps = VariantProps<typeof checkbox>;
-export type CheckboxSlots = ReturnType<typeof checkbox>;
+export type CheckboxSlots = ComponentSlots<typeof checkbox>;

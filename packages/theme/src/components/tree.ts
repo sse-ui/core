@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const color = [
   "primary",
@@ -151,4 +152,4 @@ export const tree = tv({
 });
 
 export type TreeProps = VariantProps<typeof tree>;
-export type TreeSlots = ReturnType<typeof tree>;
+export type TreeSlots = ComponentSlots<typeof tree>;

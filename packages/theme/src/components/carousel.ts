@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const carousel = tv({
   slots: {
@@ -37,4 +38,4 @@ export const carousel = tv({
 });
 
 export type CarouselProps = VariantProps<typeof carousel>;
-export type CarouselSlots = ReturnType<typeof carousel>;
+export type CarouselSlots = ComponentSlots<typeof carousel>;

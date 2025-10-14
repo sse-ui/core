@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const dashboardSearch = tv({
   slots: {
@@ -15,4 +16,4 @@ export const dashboardSearch = tv({
 });
 
 export type DashboardSearchProps = VariantProps<typeof dashboardSearch>;
-export type DashboardSearchSlots = ReturnType<typeof dashboardSearch>;
+export type DashboardSearchSlots = ComponentSlots<typeof dashboardSearch>;

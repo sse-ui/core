@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const size = ["xs", "sm", "md", "lg", "xl"] as const;
 const variant = ["outline", "soft", "subtle", "ghost", "none"] as const;
@@ -302,4 +303,4 @@ export const inputTags = tv({
 });
 
 export type InputTagsProps = VariantProps<typeof inputTags>;
-export type InputTagsSlots = ReturnType<typeof inputTags>;
+export type InputTagsSlots = ComponentSlots<typeof inputTags>;

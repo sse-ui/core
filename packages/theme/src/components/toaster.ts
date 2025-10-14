@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const position = [
   "top-left",
@@ -91,4 +92,4 @@ export const toaster = tv({
 });
 
 export type ToasterProps = VariantProps<typeof toaster>;
-export type ToasterSlots = ReturnType<typeof toaster>;
+export type ToasterSlots = ComponentSlots<typeof toaster>;

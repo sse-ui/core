@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const pricingPlans = tv({
   base: "flex flex-col gap-y-8",
@@ -24,4 +25,4 @@ export const pricingPlans = tv({
 });
 
 export type PricingPlansProps = VariantProps<typeof pricingPlans>;
-export type PricingPlansSlots = ReturnType<typeof pricingPlans>;
+export type PricingPlansSlots = ComponentSlots<typeof pricingPlans>;

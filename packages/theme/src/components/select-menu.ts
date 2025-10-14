@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const size = ["xs", "sm", "md", "lg", "xl"] as const;
 const variant = ["outline", "soft", "subtle", "ghost", "none"] as const;
@@ -351,4 +352,4 @@ export const selectMenu = tv({
 });
 
 export type SelectMenuProps = VariantProps<typeof selectMenu>;
-export type SelectMenuSlots = ReturnType<typeof selectMenu>;
+export type SelectMenuSlots = ComponentSlots<typeof selectMenu>;

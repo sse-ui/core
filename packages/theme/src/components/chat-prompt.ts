@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const variant = ["outline", "soft", "subtle", "naked"] as const;
 
@@ -32,4 +33,4 @@ export const chatPrompt = tv({
 });
 
 export type ChatPromptProps = VariantProps<typeof chatPrompt>;
-export type ChatPromptSlots = ReturnType<typeof chatPrompt>;
+export type ChatPromptSlots = ComponentSlots<typeof chatPrompt>;

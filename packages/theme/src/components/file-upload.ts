@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Color, Size } from "../types";
+import type { Color, Size } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const color: Color[] = [
   "primary",
@@ -288,4 +289,4 @@ export const fileUpload = tv({
 });
 
 export type FileUploadProps = VariantProps<typeof fileUpload>;
-export type FileUploadSlots = ReturnType<typeof fileUpload>;
+export type FileUploadSlots = ComponentSlots<typeof fileUpload>;

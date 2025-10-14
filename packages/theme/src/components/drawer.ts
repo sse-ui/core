@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Direction } from "../types";
+import type { Direction } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const direction: Direction[] = ["top", "right", "bottom", "left"] as const;
 
@@ -145,4 +146,4 @@ export const drawer = tv({
 });
 
 export type DrawerProps = VariantProps<typeof drawer>;
-export type DrawerSlots = ReturnType<typeof drawer>;
+export type DrawerSlots = ComponentSlots<typeof drawer>;

@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Size } from "../types";
+import type { Size } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const size: Size[] = [
   "3xs",
@@ -55,4 +56,4 @@ export const avatarGroup = tv({
 });
 
 export type AvatarGroupProps = VariantProps<typeof avatarGroup>;
-export type AvatarGroupSlots = ReturnType<typeof avatarGroup>;
+export type AvatarGroupSlots = ComponentSlots<typeof avatarGroup>;

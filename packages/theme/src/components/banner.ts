@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Color } from "../types";
+import type { Color } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const color: Color[] = [
   "primary",
@@ -109,4 +110,4 @@ export const banner = tv({
 });
 
 export type BannerProps = VariantProps<typeof banner>;
-export type BannerSlots = ReturnType<typeof banner>;
+export type BannerSlots = ComponentSlots<typeof banner>;

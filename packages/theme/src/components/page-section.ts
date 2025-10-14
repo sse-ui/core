@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const orientation = ["horizontal", "vertical"] as const;
 
@@ -84,4 +85,4 @@ export const pageSection = tv({
 });
 
 export type PageSectionProps = VariantProps<typeof pageSection>;
-export type PageSectionSlots = ReturnType<typeof pageSection>;
+export type PageSectionSlots = ComponentSlots<typeof pageSection>;

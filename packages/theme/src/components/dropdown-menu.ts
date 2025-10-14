@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Color, Size } from "../types";
+import type { Color, Size } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const color: Color[] = [
   "primary",
@@ -229,4 +230,4 @@ export const dropdownMenu = tv({
 });
 
 export type DropdownMenuProps = VariantProps<typeof dropdownMenu>;
-export type DropdownMenuSlots = ReturnType<typeof dropdownMenu>;
+export type DropdownMenuSlots = ComponentSlots<typeof dropdownMenu>;

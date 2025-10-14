@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const popover = tv({
   slots: {
@@ -9,4 +10,4 @@ export const popover = tv({
 });
 
 export type PopoverProps = VariantProps<typeof popover>;
-export type PopoverSlots = ReturnType<typeof popover>;
+export type PopoverSlots = ComponentSlots<typeof popover>;

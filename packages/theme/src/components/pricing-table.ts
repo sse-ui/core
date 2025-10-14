@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const pricingTable = tv({
   slots: {
@@ -54,4 +55,4 @@ export const pricingTable = tv({
 });
 
 export type PricingTableProps = VariantProps<typeof pricingTable>;
-export type PricingTableSlots = ReturnType<typeof pricingTable>;
+export type PricingTableSlots = ComponentSlots<typeof pricingTable>;

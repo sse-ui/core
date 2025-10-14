@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const error = tv({
   slots: {
@@ -12,4 +13,4 @@ export const error = tv({
 });
 
 export type ErrorProps = VariantProps<typeof error>;
-export type ErrorSlots = ReturnType<typeof error>;
+export type ErrorSlots = ComponentSlots<typeof error>;

@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const variant = ["solid", "outline", "soft", "subtle", "naked"] as const;
 
@@ -68,4 +69,4 @@ export const pageCTA = tv({
 });
 
 export type PageCTAProps = VariantProps<typeof pageCTA>;
-export type PageCTASlots = ReturnType<typeof pageCTA>;
+export type PageCTASlots = ComponentSlots<typeof pageCTA>;

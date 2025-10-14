@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const chatPalette = tv({
   slots: {
@@ -10,4 +11,4 @@ export const chatPalette = tv({
 });
 
 export type ChatPaletteProps = VariantProps<typeof chatPalette>;
-export type ChatPaletteSlots = ReturnType<typeof chatPalette>;
+export type ChatPaletteSlots = ComponentSlots<typeof chatPalette>;

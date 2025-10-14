@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const changelogVersion = tv({
   slots: {
@@ -46,4 +47,4 @@ export const changelogVersion = tv({
 });
 
 export type ChangelogVersionProps = VariantProps<typeof changelogVersion>;
-export type ChangelogVersionSlots = ReturnType<typeof changelogVersion>;
+export type ChangelogVersionSlots = ComponentSlots<typeof changelogVersion>;

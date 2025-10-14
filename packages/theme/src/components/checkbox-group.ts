@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Color, Orientation, Size } from "../types";
+import type { Color, Orientation, Size } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const orientation: Orientation[] = ["horizontal", "vertical"] as const;
 const variant = ["list", "card", "table"] as const;
@@ -199,4 +200,4 @@ export const checkboxGroup = tv({
 });
 
 export type CheckboxGroupProps = VariantProps<typeof checkboxGroup>;
-export type CheckboxGroupSlots = ReturnType<typeof checkboxGroup>;
+export type CheckboxGroupSlots = ComponentSlots<typeof checkboxGroup>;

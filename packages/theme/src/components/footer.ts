@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const footer = tv({
   slots: {
@@ -15,4 +16,4 @@ export const footer = tv({
 });
 
 export type FooterProps = VariantProps<typeof footer>;
-export type FooterSlots = ReturnType<typeof footer>;
+export type FooterSlots = ComponentSlots<typeof footer>;

@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const color = [
   "primary",
@@ -76,4 +77,4 @@ export const toast = tv({
 });
 
 export type ToastProps = VariantProps<typeof toast>;
-export type ToastSlots = ReturnType<typeof toast>;
+export type ToastSlots = ComponentSlots<typeof toast>;

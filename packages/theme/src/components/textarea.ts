@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const size = ["xs", "sm", "md", "lg", "xl"] as const;
 
@@ -292,4 +293,4 @@ export const textarea = tv({
 });
 
 export type TextareaProps = VariantProps<typeof textarea>;
-export type TextareaSlots = ReturnType<typeof textarea>;
+export type TextareaSlots = ComponentSlots<typeof textarea>;

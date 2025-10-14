@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const loadingAnimation = [
   "carousel",
@@ -161,4 +162,4 @@ export const table = tv({
 });
 
 export type TableProps = VariantProps<typeof table>;
-export type TableSlots = ReturnType<typeof table>;
+export type TableSlots = ComponentSlots<typeof table>;

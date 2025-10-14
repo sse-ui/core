@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Size } from "../types";
+import type { Size } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const size: Exclude<Size, "3xs" | "2xs" | "2xl" | "3xl">[] = [
   "xs",
@@ -52,4 +53,4 @@ export const colorPicker = tv({
 });
 
 export type ColorPickerProps = VariantProps<typeof colorPicker>;
-export type ColorPickerSlots = ReturnType<typeof colorPicker>;
+export type ColorPickerSlots = ComponentSlots<typeof colorPicker>;

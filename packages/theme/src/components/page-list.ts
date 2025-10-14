@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const pageList = tv({
   base: "relative flex flex-col",
@@ -10,4 +11,4 @@ export const pageList = tv({
 });
 
 export type PageListProps = VariantProps<typeof pageList>;
-export type PageListSlots = ReturnType<typeof pageList>;
+export type PageListSlots = ComponentSlots<typeof pageList>;

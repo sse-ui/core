@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const modal = tv({
   slots: {
@@ -35,4 +36,4 @@ export const modal = tv({
 });
 
 export type ModalProps = VariantProps<typeof modal>;
-export type ModalSlots = ReturnType<typeof modal>;
+export type ModalSlots = ComponentSlots<typeof modal>;

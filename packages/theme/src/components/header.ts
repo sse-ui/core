@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const header = tv({
   slots: {
@@ -28,4 +29,4 @@ export const header = tv({
 });
 
 export type HeaderProps = VariantProps<typeof header>;
-export type HeaderSlots = ReturnType<typeof header>;
+export type HeaderSlots = ComponentSlots<typeof header>;

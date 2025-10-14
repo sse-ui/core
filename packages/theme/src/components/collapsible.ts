@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const collapsible = tv({
   slots: {
@@ -9,4 +10,4 @@ export const collapsible = tv({
 });
 
 export type CollapsibleProps = VariantProps<typeof collapsible>;
-export type CollapsibleSlots = ReturnType<typeof collapsible>;
+export type CollapsibleSlots = ComponentSlots<typeof collapsible>;

@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Orientation } from "../types";
+import type { Orientation } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const orientation: Orientation[] = ["horizontal", "vertical"] as const;
 const variant = ["outline", "soft", "subtle", "ghost", "naked"] as const;
@@ -131,4 +132,4 @@ export const blogPost = tv({
 });
 
 export type BlogPostProps = VariantProps<typeof blogPost>;
-export type BlogPostSlots = ReturnType<typeof blogPost>;
+export type BlogPostSlots = ComponentSlots<typeof blogPost>;

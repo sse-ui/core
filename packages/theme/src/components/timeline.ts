@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const orientation = ["horizontal", "vertical"] as const;
 
@@ -335,4 +336,4 @@ export const timeline = tv({
 });
 
 export type TimelineProps = VariantProps<typeof timeline>;
-export type TimelineSlots = ReturnType<typeof timeline>;
+export type TimelineSlots = ComponentSlots<typeof timeline>;

@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const commandPalette = tv({
   slots: {
@@ -57,4 +58,4 @@ export const commandPalette = tv({
 });
 
 export type CommandPaletteProps = VariantProps<typeof commandPalette>;
-export type CommandPaletteSlots = ReturnType<typeof commandPalette>;
+export type CommandPaletteSlots = ComponentSlots<typeof commandPalette>;

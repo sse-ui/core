@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const pageAside = tv({
   slots: {
@@ -12,4 +13,4 @@ export const pageAside = tv({
 });
 
 export type PageAsideProps = VariantProps<typeof pageAside>;
-export type PageAsideSlots = ReturnType<typeof pageAside>;
+export type PageAsideSlots = ComponentSlots<typeof pageAside>;

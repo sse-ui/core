@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const color = [
   "primary",
@@ -502,4 +503,4 @@ export const navigationMenu = tv({
 });
 
 export type NavigationMenuProps = VariantProps<typeof navigationMenu>;
-export type NavigationMenuSlots = ReturnType<typeof navigationMenu>;
+export type NavigationMenuSlots = ComponentSlots<typeof navigationMenu>;

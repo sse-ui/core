@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const orientation = ["horizontal", "vertical"] as const;
 const variant = ["solid", "outline", "soft", "subtle"] as const;
@@ -95,4 +96,4 @@ export const pricingPlan = tv({
 });
 
 export type PricingPlanProps = VariantProps<typeof pricingPlan>;
-export type PricingPlanSlots = ReturnType<typeof pricingPlan>;
+export type PricingPlanSlots = ComponentSlots<typeof pricingPlan>;

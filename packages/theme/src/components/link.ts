@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const link = tv({
   base: "focus-visible:outline-primary",
@@ -21,4 +22,4 @@ export const link = tv({
 });
 
 export type LinkProps = VariantProps<typeof link>;
-export type LinkSlots = ReturnType<typeof link>;
+export type LinkSlots = ComponentSlots<typeof link>;

@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const animation = ["carousel", "carousel-inverse", "swing", "elastic"] as const;
 const size = ["2xs", "xs", "sm", "md", "lg", "xl", "2xl"] as const;
@@ -284,4 +285,4 @@ export const progress = tv({
 });
 
 export type ProgressProps = VariantProps<typeof progress>;
-export type ProgressSlots = ReturnType<typeof progress>;
+export type ProgressSlots = ComponentSlots<typeof progress>;

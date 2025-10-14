@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Color, Size } from "../types";
+import type { Color, Size } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const color: Color[] = [
   "primary",
@@ -425,4 +426,4 @@ export const button = tv({
 });
 
 export type ButtonProps = VariantProps<typeof button>;
-export type ButtonSlots = ReturnType<typeof button>;
+export type ButtonSlots = ComponentSlots<typeof button>;

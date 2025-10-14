@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Color, Size } from "../types";
+import type { Color, Size } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const color: Color[] = [
   "primary",
@@ -263,4 +264,4 @@ export const badge = tv({
 });
 
 export type BadgeProps = VariantProps<typeof badge>;
-export type BadgeSlots = ReturnType<typeof badge>;
+export type BadgeSlots = ComponentSlots<typeof badge>;

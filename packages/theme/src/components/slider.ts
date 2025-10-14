@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const color = [
   "primary",
@@ -164,4 +165,4 @@ export const slider = tv({
 });
 
 export type SliderProps = VariantProps<typeof slider>;
-export type SliderSlots = ReturnType<typeof slider>;
+export type SliderSlots = ComponentSlots<typeof slider>;

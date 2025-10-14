@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const fieldGroup = tv({
   base: "relative",
@@ -18,4 +19,4 @@ export const fieldGroup = tv({
 });
 
 export type FieldGroupProps = VariantProps<typeof fieldGroup>;
-export type FieldGroupSlots = ReturnType<typeof fieldGroup>;
+export type FieldGroupSlots = ComponentSlots<typeof fieldGroup>;

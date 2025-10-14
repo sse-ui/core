@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Color, Size } from "../types";
+import type { Color, Size } from "../types/types";
+import type { ComponentSlots } from "../types";
 
 const color: Color[] = [
   "primary",
@@ -228,4 +229,4 @@ export const contextMenu = tv({
 });
 
 export type ContextMenuProps = VariantProps<typeof contextMenu>;
-export type ContextMenuSlots = ReturnType<typeof contextMenu>;
+export type ContextMenuSlots = ComponentSlots<typeof contextMenu>;

@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const orientation = ["horizontal", "vertical"] as const;
 
@@ -67,4 +68,4 @@ export const marquee = tv({
 });
 
 export type MarqueeProps = VariantProps<typeof marquee>;
-export type MarqueeSlots = ReturnType<typeof marquee>;
+export type MarqueeSlots = ComponentSlots<typeof marquee>;

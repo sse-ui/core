@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const breadcrumb = tv({
   slots: {
@@ -44,4 +45,4 @@ export const breadcrumb = tv({
 });
 
 export type BreadcrumbProps = VariantProps<typeof breadcrumb>;
-export type BreadcrumbSlots = ReturnType<typeof breadcrumb>;
+export type BreadcrumbSlots = ComponentSlots<typeof breadcrumb>;

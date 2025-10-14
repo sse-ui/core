@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 const color = [
   "primary",
@@ -159,4 +160,4 @@ export const separator = tv({
 });
 
 export type SeparatorProps = VariantProps<typeof separator>;
-export type SeparatorSlots = ReturnType<typeof separator>;
+export type SeparatorSlots = ComponentSlots<typeof separator>;

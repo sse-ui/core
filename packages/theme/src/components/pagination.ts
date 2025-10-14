@@ -1,4 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
+import type { ComponentSlots } from "../types";
 
 export const pagination = tv({
   slots: {
@@ -15,4 +16,4 @@ export const pagination = tv({
 });
 
 export type PaginationProps = VariantProps<typeof pagination>;
-export type PaginationSlots = ReturnType<typeof pagination>;
+export type PaginationSlots = ComponentSlots<typeof pagination>;
