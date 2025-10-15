@@ -1,6 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Side } from "../types/types";
-import type { ComponentSlots } from "../types";
+import type { Side } from "../types/theme";
+import type { ComponentSlots } from "../types/tv";
 
 const variant = ["solid", "outline", "soft", "subtle", "naked"] as const;
 const side: Side[] = ["left", "right"] as const;

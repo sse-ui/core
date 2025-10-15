@@ -1,5 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { ComponentSlots } from "../types";
+import type { ComponentSlots } from "../types/tv";
 
 export const pricingTable = tv({
   slots: {

@@ -1,6 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Orientation } from "../types/types";
-import type { ComponentSlots } from "../types";
+import type { Orientation } from "../types/theme";
+import type { ComponentSlots } from "../types/tv";
 
 const orientation: Orientation[] = ["horizontal", "vertical"] as const;
 const variant = ["outline", "soft", "subtle", "ghost", "naked"] as const;

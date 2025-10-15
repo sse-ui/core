@@ -1,5 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { ComponentSlots } from "../types";
+import type { ComponentSlots } from "../types/tv";
 
 export const container = tv({
   base: "w-full max-w-(--ui-container) mx-auto px-4 sm:px-6 lg:px-8",

@@ -1,6 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Color, Orientation, Size } from "../types/types";
-import type { ComponentSlots } from "../types";
+import type { Color, Orientation, Size } from "../types/theme";
+import type { ComponentSlots } from "../types/tv";
 
 const orientation: Orientation[] = ["horizontal", "vertical"] as const;
 const variant = ["list", "card", "table"] as const;

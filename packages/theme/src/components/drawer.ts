@@ -1,6 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Direction } from "../types/types";
-import type { ComponentSlots } from "../types";
+import type { Direction } from "../types/theme";
+import type { ComponentSlots } from "../types/tv";
 
 const direction: Direction[] = ["top", "right", "bottom", "left"] as const;
 

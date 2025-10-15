@@ -1,5 +1,5 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { ComponentSlots } from "../types";
+import type { ComponentSlots } from "../types/tv";
 
 const animation = ["carousel", "carousel-inverse", "swing", "elastic"] as const;
 const size = ["2xs", "xs", "sm", "md", "lg", "xl", "2xl"] as const;

@@ -1,6 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Color } from "../types/types";
-import type { ComponentSlots } from "../types";
+import type { Color } from "../types/theme";
+import type { ComponentSlots } from "../types/tv";
 
 const color: Color[] = [
   "primary",

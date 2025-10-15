@@ -1,6 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Size } from "../types/types";
-import type { ComponentSlots } from "../types";
+import type { Size } from "../types/theme";
+import type { ComponentSlots } from "../types/tv";
 
 const size: Size[] = [
   "3xs",

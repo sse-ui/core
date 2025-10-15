@@ -1,6 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
-import type { Size } from "../types/types";
-import type { ComponentSlots } from "../types";
+import type { Size } from "../types/theme";
+import type { ComponentSlots } from "../types/tv";
 
 const size: Exclude<Size, "3xs" | "2xs" | "2xl" | "3xl">[] = [
   "xs",
