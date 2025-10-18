@@ -12,7 +12,7 @@ on:
         options:
           - "theme"
           - "ui"
-          - "utils"
+          - "helpers"
 
 permissions:
   contents: write
