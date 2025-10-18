@@ -1,0 +1,96 @@
+{
+  "name": "@sse-ui/hooks",
+  "version": "1.0.0",
+  "description": "Hooks similar to nuxt vue",
+  "license": "MIT",
+  "author": "SSE World",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./hooks": {
+      "import": {
+        "types": "./dist/hooks/index.d.ts",
+        "default": "./dist/hooks/index.js"
+      },
+      "require": {
+        "types": "./dist/hooks/index.d.ts",
+        "default": "./dist/hooks/index.js"
+      }
+    },
+    "./hooks/*": {
+      "import": {
+        "types": "./dist/hooks/*.d.ts",
+        "default": "./dist/hooks/*.js"
+      },
+      "require": {
+        "types": "./dist/hooks/*.d.ts",
+        "default": "./dist/hooks/*.js"
+      }
+    },
+    "./utils": {
+      "import": {
+        "types": "./dist/utils/index.d.ts",
+        "default": "./dist/utils/index.js"
+      },
+      "require": {
+        "types": "./dist/utils/index.d.ts",
+        "default": "./dist/utils/index.js"
+      }
+    },
+    "./utils/*": {
+      "import": {
+        "types": "./dist/utils/*.d.ts",
+        "default": "./dist/utils/*.js"
+      },
+      "require": {
+        "types": "./dist/utils/*.d.ts",
+        "default": "./dist/utils/*.js"
+      }
+    },
+    "./dist": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./dist/*": {
+      "import": {
+        "types": "./dist/*",
+        "default": "./dist/*"
+      },
+      "require": {
+        "types": "./dist/*",
+        "default": "./dist/*"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@types/node": "^24.8.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
