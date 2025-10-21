@@ -45,7 +45,7 @@
     "typecheck": "tsc --noEmit",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --moduleResolution node --outDir dist/cjs",
-    "build": "node ./scripts/builder.js",
+    "build": "node ./scripts/build.js",
     "clear": "node ./scripts/rimraf.js"
   },
   "files": [

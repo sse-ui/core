@@ -8,19 +8,27 @@ const packageJsonData = JSON.parse(
   fs.readFileSync(path.resolve("./package.json"), "utf-8")
 );
 
+console.log("🛠️ Starting build script...");
+
 /**
  * @param {string} relativePath
  */
 export async function build(relativePath) {
+  console.log("📂 Relative path received:", relativePath);
+
   const srcDir = path.resolve(relativePath, "src");
+  console.log("📁 Looking for src in:", srcDir);
+
   if (!fs.existsSync(srcDir)) {
     console.error(`src directory not found at ${srcDir}`);
     process.exit(1);
   }
 
-  // Get all components: .tsx files and folders with index.ts, excluding 'core'
-  const components = [];
   const items = fs.readdirSync(srcDir);
+  // console.log("🧾 Items in src:", items);
+
+  const components = [];
+
   for (const item of items) {
     const itemPath = path.join(srcDir, item);
     const stat = fs.statSync(itemPath);
@@ -33,6 +41,8 @@ export async function build(relativePath) {
       }
     }
   }
+
+  // console.log("📦 Components detected:", components);
 
   if (components.length === 0) {
     console.log("No components found to build.");
@@ -124,6 +134,8 @@ export async function build(relativePath) {
   await fs.promises.writeFile(path.join(distDir, "index.js"), indexContent);
   console.log("Generated dist/index.js with re-exports");
 }
+
+build(process.cwd());
 
 /**
  * @typedef {{ name: string }} PackageJson
