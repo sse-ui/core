@@ -1,0 +1,94 @@
+{
+  "name": "@sse-ui/radix",
+  "version": "1.0.0",
+  "description": "All radix component in one file",
+  "license": "MIT",
+  "author": "SSE World",
+  "type": "module",
+  "source": "./src/index.ts",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "publishConfig": {
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "import": {
+          "types": "./dist/index.d.mts",
+          "default": "./dist/index.mjs"
+        },
+        "require": {
+          "types": "./dist/index.d.ts",
+          "default": "./dist/index.js"
+        }
+      },
+      "./*": {
+        "import": {
+          "types": "./dist/*.d.mts",
+          "default": "./dist/*.mjs"
+        },
+        "require": {
+          "types": "./dist/*.d.ts",
+          "default": "./dist/*.js"
+        }
+      }
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rimraf -rf dist",
+    "typecheck": "tsc --noEmit",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --moduleResolution node --outDir dist/cjs",
+    "build": "node ./scripts/builder.js",
+    "clear": "node ./scripts/rimraf.js"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "dependencies": {
+    "@floating-ui/react-dom": "^2.1.6",
+    "@types/react": "^18.0.0 || ^19.0.0",
+    "@types/react-dom": "^18.0.0 || ^19.0.0",
+    "@types/use-sync-external-store": "^1.5.0",
+    "aria-hidden": "^1.2.6",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0",
+    "react-remove-scroll": "^2.7.1",
+    "use-sync-external-store": "^1.6.0"
+  },
+  "peerDependencies": {
+    "@types/react": "^18.0.0 || ^19.0.0",
+    "@types/react-dom": "^18.0.0 || ^19.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    },
+    "@types/react-dom": {
+      "optional": true
+    }
+  },
+  "homepage": "https://github.com/sse-ui/core#readme",
+  "bugs": {
+    "url": "https://github.com/sse-ui/core/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sse-ui/core.git"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.11",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.0"
+  }
+}
