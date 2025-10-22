@@ -1,0 +1,6 @@
+# Exclude source code and build scripts
+src/
+scripts/
+
+# node_modules is auto-excluded by npm, but you can list it for clarity
+node_modules/

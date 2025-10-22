@@ -10,7 +10,7 @@ import { Portal as PortalPrimitive } from "./portal";
 import { Presence } from "./presence";
 import { Primitive } from "./primitive";
 import { useFocusGuards } from "./focus-guards";
-import { RemoveScroll } from "remove-scroll";
+import { RemoveScroll } from "react-remove-scroll";
 import { hideOthers } from "aria-hidden";
 import { createSlot } from "./slot";
 

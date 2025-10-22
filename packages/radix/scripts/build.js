@@ -3,9 +3,9 @@
 import path from "node:path";
 import { build } from "./builder.js";
 
-process.on("unhandledRejection", (err) => {
-  throw err;
-});
+// process.on("unhandledRejection", (err) => {
+//   throw err;
+// });
 process.on("SIGINT", () => process.exit(0));
 process.on("SIGTERM", () => process.exit(0));
 

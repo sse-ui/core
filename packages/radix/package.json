@@ -15,38 +15,15 @@
   "publishConfig": {
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
-    "types": "./dist/index.d.ts",
-    "exports": {
-      ".": {
-        "import": {
-          "types": "./dist/index.d.mts",
-          "default": "./dist/index.mjs"
-        },
-        "require": {
-          "types": "./dist/index.d.ts",
-          "default": "./dist/index.js"
-        }
-      },
-      "./*": {
-        "import": {
-          "types": "./dist/*.d.mts",
-          "default": "./dist/*.mjs"
-        },
-        "require": {
-          "types": "./dist/*.d.ts",
-          "default": "./dist/*.js"
-        }
-      }
-    }
+    "types": "./dist/index.d.ts"
   },
   "sideEffects": false,
   "scripts": {
-    "clean": "rimraf -rf dist",
     "typecheck": "tsc --noEmit",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --moduleResolution node --outDir dist/cjs",
     "build": "node ./scripts/build.js",
-    "clear": "node ./scripts/rimraf.js"
+    "clean": "node ./scripts/clean.js"
   },
   "files": [
     "dist",
@@ -88,7 +65,7 @@
   },
   "devDependencies": {
     "esbuild": "^0.25.11",
-    "ts-node": "^10.9.2",
-    "tsup": "^8.5.0"
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
   }
 }
